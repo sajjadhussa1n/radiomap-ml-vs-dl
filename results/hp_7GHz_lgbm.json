@@ -1,0 +1,17 @@
+{
+ "model": "lgbm",
+ "band": 7.0,
+ "hp": {
+  "learning_rate": 0.05329583952582695,
+  "num_leaves": 63,
+  "min_child_samples": 50,
+  "subsample": 0.8,
+  "colsample_bytree": 1.0,
+  "reg_lambda": 0.001385002191902785
+ },
+ "val_rmse": 17.410516258684353,
+ "trials": 6,
+ "tune_s": 64.29526281356812,
+ "tune_fraction": 0.3,
+ "n_train_maps": 480
+}

@@ -1,0 +1,28 @@
+target,eps_db,model,label,family,f_min,flag,f_min_robust,flag_robust,maps,rt_hours,rt_feat_hours,ref_classical,multiplier,multiplier_str
+eps1 (ridge@100%),17.102,ridge,Ridge (poly),classical,0.7407767749866041,=,inf,>,1185.2428399785665,0.09026165856908253,0.12431854430477746,LightGBM,2.5816129133755417,2.58x
+eps1 (ridge@100%),17.102,knn,k-NN,classical,inf,>,inf,>,inf,inf,inf,LightGBM,inf,not reached
+eps1 (ridge@100%),17.102,svr,SVR-RBF,classical,inf,>,inf,>,inf,inf,inf,LightGBM,inf,not reached
+eps1 (ridge@100%),17.102,rf,Random forest,classical,0.3363303143942055,=,inf,>,538.1285030307288,0.04098094463724371,0.05644358260531573,LightGBM,1.1721138028597593,1.17x
+eps1 (ridge@100%),17.102,lgbm,LightGBM,classical,0.28694339540547725,=,inf,>,459.10943264876363,0.0349632813275103,0.048155377462156784,LightGBM,1.0,1.00x
+eps1 (ridge@100%),17.102,mlp1x1,MLP (1x1 conv),bridge,0.32647792648782664,=,inf,>,522.3646823805226,0.039780457657462506,0.05479013643393817,LightGBM,1.137778153166702,1.14x
+eps1 (ridge@100%),17.102,unet_s,UNet-S,deep,0.048345697496830486,=,0.06656684760968096,=,77.35311599492877,0.005890793270107548,0.008113465404357171,LightGBM,0.16848513773426846,0.17x
+eps1 (ridge@100%),17.102,unet_m,UNet-M,deep,0.04551383405152529,=,0.055400306794415655,=,72.82213448244046,0.005545738322321117,0.007638216782804991,LightGBM,0.15861607125408855,0.16x
+eps1 (ridge@100%),17.102,swin_unet,Swin-UNet,deep,0.04167433591032247,=,0.05533604950741973,=,66.67893745651595,0.0050779057957085726,0.006993865021393647,LightGBM,0.14523538989783272,0.15x
+eps2 (best classical@100%),16.796,ridge,Ridge (poly),classical,inf,>,inf,>,inf,inf,inf,LightGBM,inf,not reached
+eps2 (best classical@100%),16.796,knn,k-NN,classical,inf,>,inf,>,inf,inf,inf,LightGBM,inf,not reached
+eps2 (best classical@100%),16.796,svr,SVR-RBF,classical,inf,>,inf,>,inf,inf,inf,LightGBM,inf,not reached
+eps2 (best classical@100%),16.796,rf,Random forest,classical,inf,>,inf,>,inf,inf,inf,LightGBM,inf,not reached
+eps2 (best classical@100%),16.796,lgbm,LightGBM,classical,1.0,=,inf,>,1600.0,0.12184731165568033,0.1678218709097968,LightGBM,1.0,1.00x
+eps2 (best classical@100%),16.796,mlp1x1,MLP (1x1 conv),bridge,inf,>,inf,>,inf,inf,inf,LightGBM,inf,not reached
+eps2 (best classical@100%),16.796,unet_s,UNet-S,deep,0.06414397500062814,=,0.09196482695092137,=,102.63036000100503,0.007815770912735706,0.01076476189219665,LightGBM,0.06414397500062814,0.06x
+eps2 (best classical@100%),16.796,unet_m,UNet-M,deep,0.05416967905935504,=,0.0728075657106346,=,86.67148649496806,0.006600429766633414,0.009090856886324205,LightGBM,0.05416967905935504,0.05x
+eps2 (best classical@100%),16.796,swin_unet,Swin-UNet,deep,0.05252442342389131,=,0.07097069978402916,=,84.0390774782261,0.0063999597904658015,0.008814747007455796,LightGBM,0.05252442342389131,0.05x
+eps3 (best@100% + 0.5 dB),14.722,ridge,Ridge (poly),classical,inf,>,inf,>,inf,inf,inf,Ridge (poly),inf,not reached
+eps3 (best@100% + 0.5 dB),14.722,knn,k-NN,classical,inf,>,inf,>,inf,inf,inf,Ridge (poly),inf,not reached
+eps3 (best@100% + 0.5 dB),14.722,svr,SVR-RBF,classical,inf,>,inf,>,inf,inf,inf,Ridge (poly),inf,not reached
+eps3 (best@100% + 0.5 dB),14.722,rf,Random forest,classical,inf,>,inf,>,inf,inf,inf,Ridge (poly),inf,not reached
+eps3 (best@100% + 0.5 dB),14.722,lgbm,LightGBM,classical,inf,>,inf,>,inf,inf,inf,Ridge (poly),inf,not reached
+eps3 (best@100% + 0.5 dB),14.722,mlp1x1,MLP (1x1 conv),bridge,inf,>,inf,>,inf,inf,inf,Ridge (poly),inf,not reached
+eps3 (best@100% + 0.5 dB),14.722,unet_s,UNet-S,deep,0.38979249650242026,=,inf,>,623.6679944038724,0.04749516780237609,0.06541570602963659,Ridge (poly),inf,no classical reaches it
+eps3 (best@100% + 0.5 dB),14.722,unet_m,UNet-M,deep,0.3597892388590987,=,0.6262016300485552,=,575.662782174558,0.043839351517624615,0.06038050319854571,Ridge (poly),inf,no classical reaches it
+eps3 (best@100% + 0.5 dB),14.722,swin_unet,Swin-UNet,deep,0.6535847003247072,=,0.7554935495777662,=,1045.7355205195315,0.07963753867384904,0.10968580720651123,Ridge (poly),inf,no classical reaches it

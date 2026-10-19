@@ -1,0 +1,17 @@
+check,status,detail
+P4 city-level split disjoint,PASS,"train=['berlin', 'chicago', 'london', 'madrid', 'paris', 'singapore', 'sydney', 'tokyo', 'toronto', 'vienna'] val=['barcelona', 'sanfrancisco'] test=['hongkong', 'munich', 'newyork']"
+P6 nested training subsets,PASS,subset(f_i) ⊂ subset(f_j) for every seed and f_i < f_j
+P1 identical feature stack for all models,PASS,"feature hash(es): ['6efc2649'], channels=['height', 'bmask', 'bfrac10', 'bfrac25', 'bfrac50', 'dist_bldg', 'canyon', 'tx_h', 'logd2', 'logd3', 'elev', 'los', 'ncross', 'depth', 'hmax_path', 'h_exc', 'nu']"
+P8 identical test pixels for all models,PASS,"eval-pixel hash b1bc07e195, 2048 px/map x 480 test maps"
+P1 normalisation from training subset only,PASS,recomputed stats hash for 7GHz|lgbm|0.2|2|aug0 matches the logged one
+P9 headline runs without augmentation,PASS,"198 headline runs, 0 separately-labelled augmentation-ablation runs"
+P7 equal tuning budget,PASS,trials per model = [6]
+Grid complete (model x fraction x seed),PASS,missing: []
+P3 >= 5 classical learners,PASS,"5 classical: ['knn', 'lgbm', 'rf', 'ridge', 'svr']"
+P2 no untrained baselines,PASS,"models: ['ridge', 'knn', 'svr', 'rf', 'lgbm', 'mlp1x1', 'unet_s', 'unet_m', 'swin_unet']"
+P5 data counted in maps,PASS,n_maps and frac_actual logged per run; classical pixels drawn from the same maps
+P13 label-noise floor measured,PASS,"label sigma = 4.18 dB (median |diff| 0.02 dB, p95 6.1 dB) over 160 maps"
+P13 geometric LoS vs Sionna LoS,PASS,agreement = 0.993 (threshold 0.95)
+P14 K pixels per map sufficient,PASS,LightGBM RMSE K=1500: 17.035 dB vs 4K: 17.035 dB (Δ=+0.000)
+Label policy for unhit/weak cells logged,PASS,"floor160: mean unhit outdoor cells 24.3%, at floor 27.2%; 0 maps excluded"
+P15 fingerprints + versions saved,PASS,SCENE=771d00 RT=471a1c FEAT=f52049 EXP=de1281

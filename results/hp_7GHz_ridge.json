@@ -1,0 +1,13 @@
+{
+ "model": "ridge",
+ "band": 7.0,
+ "hp": {
+  "alpha": 19.264851891021472,
+  "degree": 2
+ },
+ "val_rmse": 17.697945672095898,
+ "trials": 6,
+ "tune_s": 180.4783215522766,
+ "tune_fraction": 0.3,
+ "n_train_maps": 480
+}

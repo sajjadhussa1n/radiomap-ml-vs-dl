@@ -1,0 +1,235 @@
+{
+ "CFG": {
+  "RUN_SCENES": true,
+  "RUN_RT": true,
+  "RUN_FEATURES": true,
+  "RUN_EXPERIMENTS": true,
+  "RUN_ANALYSIS": true,
+  "BANDS_GHZ": [
+   7.0
+  ],
+  "SCENE_SOURCE": "osm",
+  "CITIES": {
+   "london": [
+    51.5136,
+    -0.089,
+    "train"
+   ],
+   "paris": [
+    48.8606,
+    2.3376,
+    "train"
+   ],
+   "berlin": [
+    52.52,
+    13.405,
+    "train"
+   ],
+   "madrid": [
+    40.4168,
+    -3.7038,
+    "train"
+   ],
+   "chicago": [
+    41.88,
+    -87.63,
+    "train"
+   ],
+   "toronto": [
+    43.651,
+    -79.381,
+    "train"
+   ],
+   "tokyo": [
+    35.6812,
+    139.7671,
+    "train"
+   ],
+   "singapore": [
+    1.284,
+    103.851,
+    "train"
+   ],
+   "sydney": [
+    -33.8688,
+    151.2093,
+    "train"
+   ],
+   "vienna": [
+    48.2082,
+    16.3738,
+    "train"
+   ],
+   "barcelona": [
+    41.3874,
+    2.1686,
+    "val"
+   ],
+   "sanfrancisco": [
+    37.79,
+    -122.4,
+    "val"
+   ],
+   "newyork": [
+    40.7549,
+    -73.984,
+    "test"
+   ],
+   "hongkong": [
+    22.28,
+    114.16,
+    "test"
+   ],
+   "munich": [
+    48.1374,
+    11.5755,
+    "test"
+   ]
+  },
+  "TILES_PER_CITY": 10,
+  "TILE_M": 256.0,
+  "CELL_M": 1.0,
+  "TILE_MARGIN_M": 40.0,
+  "TILE_SEARCH_RADIUS_M": 1500.0,
+  "TILE_MIN_SEP_M": 300.0,
+  "MAX_TILE_TRIES": 400,
+  "MIN_BLDG_COVER": 0.1,
+  "MAX_BLDG_COVER": 0.7,
+  "MIN_BLDG_AREA_M2": 6.0,
+  "POLY_SIMPLIFY_M": 0.25,
+  "LEVEL_HEIGHT_M": 3.0,
+  "DEFAULT_HEIGHT_M": 9.0,
+  "MIN_VALID_HEIGHT_M": 2.0,
+  "MAX_VALID_HEIGHT_M": 450.0,
+  "BUILDING_MATERIAL": "concrete",
+  "BUILDING_THICKNESS_M": 0.3,
+  "GROUND_MATERIAL": "medium_dry_ground",
+  "RX_H": 1.5,
+  "N_TX_PER_SCENE": 16,
+  "TX_ABOVE_ROOF_M": 3.0,
+  "TX_MIN_ROOF_M": 6.0,
+  "TX_CENTRAL_FRAC": 0.75,
+  "TX_MIN_SEP_M": 15.0,
+  "TX_ROOF_EDGE_BUFFER_M": 1.0,
+  "TX_ROOF_EDGE_MAX_M": 4.0,
+  "RT": {
+   "max_depth": 5,
+   "samples_per_tx": 30000000,
+   "los": true,
+   "specular_reflection": true,
+   "diffuse_reflection": false,
+   "refraction": false,
+   "diffraction": true,
+   "edge_diffraction": false,
+   "diffraction_lit_region": true,
+   "seed": 7
+  },
+  "TX_BATCH": 1,
+  "LABEL_MODE": "floor",
+  "PL_FLOOR_DB": 160.0,
+  "MAX_INVALID_FRAC": 0.2,
+  "LOS_CHECK_SCENES": 10,
+  "LOS_CHECK_SAMPLES": 20000000,
+  "NOISE_CHECK_SCENES": 10,
+  "FEATURE_SET": "B",
+  "RAY_STEP_PX": 0.5,
+  "RAY_RASTER_UPSAMPLE": 2,
+  "CONTEXT_RADII_M": [
+   10,
+   25,
+   50
+  ],
+  "CANYON_HALF_WIDTH_M": 20.0,
+  "FRACTIONS": [
+   0.025,
+   0.05,
+   0.1,
+   0.2,
+   0.3,
+   0.4,
+   0.5,
+   0.6,
+   0.7,
+   0.8,
+   0.9,
+   1.0
+  ],
+  "SMALL_FRAC_MAX": 0.3,
+  "SEEDS_SMALL": [
+   0,
+   1,
+   2
+  ],
+  "SEEDS_LARGE": [
+   0
+  ],
+  "K_PIX": 1500,
+  "K_CHECK_MULT": 4,
+  "EVAL_PIX_PER_MAP": 2048,
+  "EVAL_PIX_SEED": 2027,
+  "NORM_PIX_PER_MAP": 4096,
+  "KNN_CAP": 50000,
+  "SVR_CAP": 10000,
+  "RF_N_EST": 100,
+  "RF_MAX_SAMPLES": 200000,
+  "FULL_EVAL_SKIP": [
+   "knn",
+   "svr"
+  ],
+  "MODELS": [
+   "ridge",
+   "knn",
+   "svr",
+   "rf",
+   "lgbm",
+   "mlp1x1",
+   "unet_s",
+   "unet_m",
+   "swin_unet"
+  ],
+  "OPTIONAL_MODELS": [],
+  "TUNE_FRACTION": 0.3,
+  "TUNE_SEED": 0,
+  "TUNE_TRIALS": 6,
+  "BATCH": 8,
+  "MAX_STEPS": 12000,
+  "MIN_STEPS": 1500,
+  "EPOCHS_EQ": 60,
+  "EVAL_EVERY": null,
+  "PATIENCE": 8,
+  "VAL_MAPS_MAX": 200,
+  "AMP": true,
+  "NUM_WORKERS": 2,
+  "AUGMENT_D4": false,
+  "RUN_AUG_ABLATION": false,
+  "BOOTSTRAP": 1000,
+  "CI": 0.95,
+  "EPS3_MARGIN_DB": 0.5,
+  "K_SUFFICIENCY_DB": 0.1,
+  "LOS_AGREEMENT_MIN": 0.95
+ },
+ "SCENE_FP": "771d00",
+ "RT_FP": "471a1c",
+ "FEAT_FP": "f52049",
+ "EXP_FP": "de1281",
+ "DRY_RUN": false,
+ "PRESET": "full",
+ "versions": {
+  "python": "3.13.15",
+  "numpy": "2.1.3",
+  "pandas": "2.2.3",
+  "scipy": "1.16.3",
+  "torch": "2.11.0+cu130",
+  "sklearn": "1.6.1",
+  "lightgbm": "4.6.0",
+  "shapely": "2.1.2",
+  "trimesh": "5.1.1",
+  "device": "cuda",
+  "gpu": "Tesla T4",
+  "cpus": 8,
+  "sionna_rt": "2.2.0",
+  "mitsuba": "3.9.1",
+  "drjit": "1.5.0",
+  "osmnx": "2.1.1"
+ }
+}

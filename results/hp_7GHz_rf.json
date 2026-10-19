@@ -1,0 +1,14 @@
+{
+ "model": "rf",
+ "band": 7.0,
+ "hp": {
+  "max_depth": 20,
+  "min_samples_leaf": 30,
+  "max_features": 0.33
+ },
+ "val_rmse": 17.52489397092705,
+ "trials": 6,
+ "tune_s": 215.91240859031677,
+ "tune_fraction": 0.3,
+ "n_train_maps": 480
+}

@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\caption{Coverage-hole detection F1 (PL $\ge$ 146 dB) on unseen cities vs. training fraction (7GHz).}
+\begin{tabular}{lcccc}
+\hline
+Model & 5\% & 10\% & 30\% & 100\% \\
+\hline
+Ridge (poly) & 0.553 & 0.524 & 0.533 & 0.52 \\
+k-NN & 0.53 & 0.512 & 0.533 & 0.511 \\
+SVR-RBF & 0.587 & 0.583 & 0.593 & 0.59 \\
+Random forest & 0.44 & 0.474 & 0.562 & 0.559 \\
+LightGBM & 0.45 & 0.465 & 0.573 & 0.569 \\
+MLP (1x1 conv) & 0.503 & 0.513 & 0.525 & 0.566 \\
+UNet-S & 0.579 & 0.546 & 0.63 & 0.709 \\
+UNet-M & 0.643 & 0.666 & 0.667 & 0.726 \\
+Swin-UNet & 0.573 & 0.644 & 0.673 & 0.728 \\
+\hline
+\end{tabular}
+\end{table}

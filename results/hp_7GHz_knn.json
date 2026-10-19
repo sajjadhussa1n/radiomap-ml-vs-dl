@@ -1,0 +1,14 @@
+{
+ "model": "knn",
+ "band": 7.0,
+ "hp": {
+  "n_neighbors": 37,
+  "weights": "uniform",
+  "p": 1
+ },
+ "val_rmse": 17.990052391337144,
+ "trials": 6,
+ "tune_s": 364.7114109992981,
+ "tune_fraction": 0.3,
+ "n_train_maps": 480
+}

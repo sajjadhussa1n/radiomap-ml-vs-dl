@@ -1,0 +1,28 @@
+target,eps_db,model,label,family,f_min,flag,f_min_robust,flag_robust,maps,rt_hours,rt_feat_hours,ref_classical,multiplier,multiplier_str
+eps1 (ridge@100%),15.08,ridge,Ridge (poly),classical,0.3984011361944391,=,inf,>,637.4418179111026,0.04854410740586097,0.06686042404873954,Random forest,10.41494767343477,10.41x
+eps1 (ridge@100%),15.08,knn,k-NN,classical,inf,>,inf,>,inf,inf,inf,Random forest,inf,not reached
+eps1 (ridge@100%),15.08,svr,SVR-RBF,classical,inf,>,inf,>,inf,inf,inf,Random forest,inf,not reached
+eps1 (ridge@100%),15.08,rf,Random forest,classical,0.03825282168345733,=,inf,>,61.20451469353173,0.004661003485373392,0.0064196601024966524,Random forest,1.0,1.00x
+eps1 (ridge@100%),15.08,lgbm,LightGBM,classical,0.04706648431884682,=,inf,>,75.30637491015491,0.00573492458333572,0.007898785455535486,Random forest,1.2304055556560685,1.23x
+eps1 (ridge@100%),15.08,mlp1x1,MLP (1x1 conv),bridge,0.11491308959346608,=,0.3772485584161971,=,183.86094334954572,0.014001851041012177,0.01928492968760058,Random forest,3.0040421735257494,3.00x
+eps1 (ridge@100%),15.08,unet_s,UNet-S,deep,0.07044985599609199,=,0.2047501893054919,=,112.71976959374719,0.008584125559653622,0.011823026638589924,Random forest,1.8416904399645495,1.84x
+eps1 (ridge@100%),15.08,unet_m,UNet-M,deep,0.05467667008653138,=,0.07479806691216564,=,87.48267213845021,0.006662205260328404,0.009175941069039418,Random forest,1.4293499846620896,1.43x
+eps1 (ridge@100%),15.08,swin_unet,Swin-UNet,deep,0.037793727599956244,=,0.04184971400799744,=,60.46996415992999,0.004605064105501756,0.006342614074479881,Random forest,0.9879984256507899,0.99x
+eps2 (best classical@100%),15.032,ridge,Ridge (poly),classical,inf,>,inf,>,inf,inf,inf,Random forest,inf,not reached
+eps2 (best classical@100%),15.032,knn,k-NN,classical,inf,>,inf,>,inf,inf,inf,Random forest,inf,not reached
+eps2 (best classical@100%),15.032,svr,SVR-RBF,classical,inf,>,inf,>,inf,inf,inf,Random forest,inf,not reached
+eps2 (best classical@100%),15.032,rf,Random forest,classical,0.04186610586998199,=,inf,>,66.98576939197119,0.005101272449749404,0.007026048214808005,Random forest,1.0,1.00x
+eps2 (best classical@100%),15.032,lgbm,LightGBM,classical,0.048637675154854426,=,inf,>,77.82028024776709,0.005926369962801288,0.008162465641190612,Random forest,1.1617434711005126,1.16x
+eps2 (best classical@100%),15.032,mlp1x1,MLP (1x1 conv),bridge,0.12783241188295782,=,0.399296521909776,=,204.53185901273253,0.015576035730400057,0.021453074525109722,Random forest,3.053362839141285,3.05x
+eps2 (best classical@100%),15.032,unet_s,UNet-S,deep,0.07425542662790992,=,0.20827006223000682,=,118.80868260465587,0.009047824110456444,0.012461684621900986,Random forest,1.7736406356615813,1.77x
+eps2 (best classical@100%),15.032,unet_m,UNet-M,deep,0.05693688871538424,=,0.07781608398025648,=,91.09902194461479,0.006937606824008213,0.009555255187998681,Random forest,1.3599757496483094,1.36x
+eps2 (best classical@100%),15.032,swin_unet,Swin-UNet,deep,0.03829175797739089,=,0.04238094028707055,=,61.26681276382543,0.004665747768115032,0.006426194464190876,Random forest,0.9146243048328527,0.91x
+eps3 (best@100% + 0.5 dB),13.913,ridge,Ridge (poly),classical,inf,>,inf,>,inf,inf,inf,Ridge (poly),inf,not reached
+eps3 (best@100% + 0.5 dB),13.913,knn,k-NN,classical,inf,>,inf,>,inf,inf,inf,Ridge (poly),inf,not reached
+eps3 (best@100% + 0.5 dB),13.913,svr,SVR-RBF,classical,inf,>,inf,>,inf,inf,inf,Ridge (poly),inf,not reached
+eps3 (best@100% + 0.5 dB),13.913,rf,Random forest,classical,inf,>,inf,>,inf,inf,inf,Ridge (poly),inf,not reached
+eps3 (best@100% + 0.5 dB),13.913,lgbm,LightGBM,classical,inf,>,inf,>,inf,inf,inf,Ridge (poly),inf,not reached
+eps3 (best@100% + 0.5 dB),13.913,mlp1x1,MLP (1x1 conv),bridge,0.6939176047074295,=,inf,>,1110.2681675318872,0.08455199464414935,0.11645455067924565,Ridge (poly),inf,no classical reaches it
+eps3 (best@100% + 0.5 dB),13.913,unet_s,UNet-S,deep,0.2729570642768775,=,0.32906536163388117,=,436.73130284300396,0.03325908447956426,0.04580816520499124,Ridge (poly),inf,no classical reaches it
+eps3 (best@100% + 0.5 dB),13.913,unet_m,UNet-M,deep,0.2714824681550951,=,0.32619252041348706,=,434.37194904815215,0.03307940890634718,0.04556069572499739,Ridge (poly),inf,no classical reaches it
+eps3 (best@100% + 0.5 dB),13.913,swin_unet,Swin-UNet,deep,0.19685619095650359,=,0.29395537462925025,=,314.96990553040575,0.023986397650827215,0.033036774266496656,Ridge (poly),inf,no classical reaches it
