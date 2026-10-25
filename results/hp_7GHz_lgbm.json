@@ -2,16 +2,16 @@
  "model": "lgbm",
  "band": 7.0,
  "hp": {
-  "learning_rate": 0.05329583952582695,
-  "num_leaves": 63,
+  "learning_rate": 0.05134798494866116,
+  "num_leaves": 127,
   "min_child_samples": 50,
-  "subsample": 0.8,
-  "colsample_bytree": 1.0,
-  "reg_lambda": 0.001385002191902785
+  "subsample": 0.6,
+  "colsample_bytree": 0.6,
+  "reg_lambda": 0.0020457682666557156
  },
- "val_rmse": 17.410516258684353,
+ "val_rmse": 11.28563716711147,
  "trials": 6,
- "tune_s": 64.29526281356812,
+ "tune_s": 52.259597301483154,
  "tune_fraction": 0.3,
  "n_train_maps": 480
 }

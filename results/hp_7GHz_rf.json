@@ -6,9 +6,9 @@
   "min_samples_leaf": 30,
   "max_features": 0.33
  },
- "val_rmse": 17.52489397092705,
+ "val_rmse": 11.267564597923332,
  "trials": 6,
- "tune_s": 215.91240859031677,
+ "tune_s": 210.14601278305054,
  "tune_fraction": 0.3,
  "n_train_maps": 480
 }

@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use the UrbanRM7 dataset or this code, please cite the paper below."
+title: "UrbanRM7: ray-traced radio maps at 7 GHz, and code for 'To Deep Learn or Not'"
+authors:
+  - family-names: Hussain
+    given-names: Sajjad
+    affiliation: "School of Electrical Engineering and Computer Science, National University of Sciences and Technology (NUST), Islamabad, Pakistan"
+version: "1.0"
+license: MIT
+repository-code: "https://github.com/sajjadhussa1n/radiomap-ml-vs-dl"
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Hussain
+      given-names: Sajjad
+  title: "To Deep Learn or Not: Accuracy, Data and Cost of Radio Map Prediction in the Upper Mid-Band"
+  journal: "IEEE Antennas and Wireless Propagation Letters"
+  year: 2026
+  notes: "Submitted; volume, pages and DOI to be added after publication."

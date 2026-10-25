@@ -1,0 +1,20 @@
+{
+ "model": "lgbm",
+ "hp": {
+  "learning_rate": 0.05134798494866116,
+  "num_leaves": 127,
+  "min_child_samples": 50,
+  "subsample": 0.6,
+  "colsample_bytree": 0.6,
+  "reg_lambda": 0.0020457682666557156
+ },
+ "fit_min": 0.5229798118273418,
+ "rmse": 9.893310567317373,
+ "rmse_cov": 8.876459711415949,
+ "rmse_los": 1.0624681423173776,
+ "rmse_nlos": 10.601535805922172,
+ "mae": 6.785346142539472,
+ "rmse_hongkong": 8.489454312217143,
+ "rmse_munich": 11.584507776643656,
+ "rmse_newyork": 9.346717445062797
+}

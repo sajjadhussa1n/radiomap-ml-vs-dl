@@ -6,9 +6,9 @@
   "weights": "uniform",
   "p": 1
  },
- "val_rmse": 17.990052391337144,
+ "val_rmse": 11.532396242920186,
  "trials": 6,
- "tune_s": 364.7114109992981,
+ "tune_s": 368.2119343280792,
  "tune_fraction": 0.3,
  "n_train_maps": 480
 }
